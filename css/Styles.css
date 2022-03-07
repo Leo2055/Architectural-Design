@@ -3,34 +3,45 @@
     margin: 0;
     font-family: 'Playfair Display', serif;
 }
+
+html{
+    font-size: 100%;
+}
+
 .menu{
     /*position: fixed;*/
     width: 100%;
-    padding-top: 10px;
-    background: white;
+    padding-top: 5px;
+    background: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .menu .first-part{
     display: flex;
+    justify-content: flex-star;
     align-items: center;
     padding-left: 20px;
 }
 
 .menu .first-part h2{
-    color:black;
-    text-decoration: underline
+    font-size: 1.8rem;
+    font-weight: 100;
+    color:#111;
+    text-decoration: underline;
 }
+
 .menu .second-part{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
 }
+
 .menu .second-part a{
+    font-size: 1.1rem;
     text-decoration: none;
     color: black;
-    padding: 15px;
+    padding: 1.1rem;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 5% 80%;
     background-repeat: no-repeat;
@@ -40,7 +51,7 @@
 .menu .second-part a:hover{
     color: orangered;
     background-size: 75% 2px;
-    transition: 1s 
+    transition: 1s;
 }
 /*
 .Activo{
@@ -54,7 +65,7 @@
 }
 .cover-page img{
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
 }
 .text-button-img{
     text-align: center;
@@ -62,15 +73,15 @@
     color: white;
 }
 .text-button-img p{
-    font-size: 38px;
-    padding: 280px;
+    font-size: 3rem;
+    padding: 5.5rem;
 }
 .text-button-img a{
-    font-size: 20px;
+    font-size: 1.3rem;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 0.8rem;
     background: black;
     border-radius: 5px;
     transition: 1s ease all;
@@ -85,42 +96,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 }
 .first-section .text-first-section{
     width: 40%;
     font-family: 'Playfair Display', serif;
 }
 .first-section .text-first-section h1{
-    font-size: 36px;
+    font-size: 2.4rem;
     font-weight: 100;
 }
 .first-section .text-first-section p{
-    font-size: 18px;
+    font-size: 1.15rem;
 }
 .second-section{
     text-align: center;
-    font-size: 18px;
+    font-size: 1.4rem;
 }
 .second-section h2{
     font-family: 'Playfair Display', serif;
     font-weight: 100;
     text-decoration: overline;
 }
-.second-section img{
-    width: 520px;
-    height: 320px;
+.second-section img{ 
+    width: 32.5rem;
+    height: 20rem;
 }
-
 
 footer{
-    font-size: 14px;
+    font-size: 0.88rem;
     background: black;
     color: white;
-    padding-top: 10px;
+    padding-top: 0.63rem;
 }
 footer .container-footer{
-    padding: 10px;
+    padding: 0.63rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,35 +148,81 @@ footer .container-footer{
     background-size: 80% 2px;
 }
 .footer-1, .footer-2, .footer-3{
-    padding: 20px;
+    padding: 1.25rem;
 }
 .footer-4{
     text-align: center;
+    padding-bottom: 0.5rem;
 }
-@media screen and (max-width: 800px){
-    .first-part h2{
-        font-size: 1em;
+
+@media screen and (min-width: 320px){
+    html{
+        font-size: 40%;
     }
-    .second-part a{
-        font-size: 0.9em;
+}
+
+@media screen and (min-width: 540px){
+    html{
+        font-size: 50%;
     }
-    .menu .second-part a:hover{
-        color: orangered;
+}
+
+@media screen and (min-width: 600px){
+    html{
+        font-size: 60%;
     }
-    .text-button-img p{
-        font-size: 1.4em;
-        padding: 50px;
+}
+
+@media screen and (min-width: 640px){
+    html{
+        font-size: 65%;
     }
-    .text-button-img a{
-        font-size: 0.8em;
+}
+
+@media screen and (min-width: 720px){
+    html{
+        font-size: 68%;
     }
-    .first-section .text-first-section{
-        width: 55%;
+}
+
+@media screen and (min-width: 768px){
+    html{
+        font-size: 70%;
     }
-    .first-section .text-first-section h1, .second-section h2{
-        font-size: 1.5em;
+}
+
+@media screen and (min-width: 800px){
+    html{
+        font-size: 75%;
     }
-    .first-section .text-first-section p{
-        font-size: 1em;
+}
+
+@media screen and (min-width: 960px){
+    html{
+        font-size: 85%;
+    }
+}
+
+@media screen and (min-width: 1240px){
+    html{
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 1380px){
+    html{
+        font-size: 95%;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    html{
+        font-size: 98%;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    html{
+        font-size: 100%;
     }
 }
